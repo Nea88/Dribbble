@@ -20,7 +20,8 @@ struct APIManager {
         DispatchQueue.global(qos: .utility).async {
             ShotsDS.getShots(perPage: count, page: page, sort: .recent) { apiData, shots in
                 if let error = apiData.error {
-                    AlertManager.shared.showErrorAlertWithTitle(error.helpAnchor, message: error.description, cancelButton: false)
+                    AlertManager.shared.showErrorAlertWithTitle("Error", message: error.localizedDescription, cancelButton: false)
+                    return
                 }
                 
                 let realm = try! Realm()

@@ -17,11 +17,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-        loginButton.isHidden = true
         let authManager = AuthManager()
-        authManager.logIn(with: self) {
-            self.loginButton.isHidden = false
-            
+        authManager.logIn(with: self) {            
             guard let feedViewController = AppStoryboard.feed.initialViewController else { return }
             self.present(feedViewController, animated: true)
         }
