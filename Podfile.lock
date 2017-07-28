@@ -1,0 +1,35 @@
+PODS:
+  - DribbbleSwift (0.3.1)
+  - Kingfisher (3.10.3)
+  - OAuthSwift (1.1.2)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
+
+DEPENDENCIES:
+  - DribbbleSwift (from `https://github.com/gkye/DribbbleSwift.git`)
+  - Kingfisher
+  - OAuthSwift
+  - RealmSwift
+
+EXTERNAL SOURCES:
+  DribbbleSwift:
+    :git: https://github.com/gkye/DribbbleSwift.git
+
+CHECKOUT OPTIONS:
+  DribbbleSwift:
+    :commit: ce3a8b2d43147270a478b89b67055162ea9dd40b
+    :git: https://github.com/gkye/DribbbleSwift.git
+
+SPEC CHECKSUMS:
+  DribbbleSwift: 9aab6461dc20546bd1add706ff687286f9ebe204
+  Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
+  OAuthSwift: 5aa5659984d3ca3206ba636a9e7a9c6626b2e8bd
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
+
+PODFILE CHECKSUM: 126e896009d092cb822e320af0fcc8e105974132
+
+COCOAPODS: 1.2.1
