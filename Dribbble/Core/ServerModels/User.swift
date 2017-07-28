@@ -10,8 +10,9 @@ import Foundation
 import RealmSwift
 import DribbbleSwift
 
-class User: UserAndTeamBaseModel {
-    dynamic var team: Team?
+class User: UserAndTeamRealmModel {
+    dynamic var team: Team!
+    let shot = LinkingObjects(fromType: Shot.self, property: "user")
     
     required convenience init?(_ user: UserDS) {
         self.init()

@@ -10,8 +10,7 @@ import Foundation
 import RealmSwift
 import DribbbleSwift
 
-class Shot: Object {
-    dynamic var id = 0
+class Shot: DribbbleObject {
     dynamic var title : String!
     dynamic var shotDescription : String!
     var width: Int!
@@ -34,15 +33,13 @@ class Shot: Object {
     dynamic var rebounds_url: String!
     var animated: Bool!
     var tags = List<StringObject>()
-    dynamic var user: User!
+    dynamic var user: User?
     dynamic var team: Team!
-    
-    override static func primaryKey() -> String? {
-        return "id"
-    }
+
 
     required convenience init?(_ shot: ShotsDS) {
         self.init()
+        guard let _ = shot.id else { return }
         id = shot.id
         title = shot.title
         shotDescription = shot.description

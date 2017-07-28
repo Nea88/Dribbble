@@ -24,13 +24,15 @@ class FeedTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
-        loadLatest()
+        setupNavigationBar()
         setUpRealmNotification()
         tableView.register(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
+        if shots.count < 50 {
+            loadLatest()
+        }
     }
-
-    func setupUI() {
+    
+    func setupNavigationBar() {
         tableView.addSubview(pullToUpdateContoll)
         let logOutButton = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(FeedTableViewController.logOut))
    
@@ -60,12 +62,10 @@ class FeedTableViewController: UITableViewController {
             switch changes {
             case .initial:
                 // Results are now populated and can be accessed without blocking the UI
-                print("Initial")
                 self.tableView.reloadData()
                 break
             case .update(_, let deletions, let insertions, let modifications):
                 // Query results have changed, so apply them to the TableView
-                print("Update")
                 
                 self.tableView.beginUpdates()
                 self.tableView.insertRows(at: insertions.map { IndexPath(row: $0, section: 0) }, with: .automatic)
@@ -73,9 +73,8 @@ class FeedTableViewController: UITableViewController {
                 self.tableView.reloadRows(at: modifications.map { IndexPath(row: $0, section: 0) }, with: .automatic)
                 self.tableView.endUpdates()
                 break
-            case .error(let err):
+            case .error( _):
                 // An error occurred while opening the Realm file on the background worker thread
-                fatalError("\(err)")
                 break
             }
         }
@@ -99,9 +98,7 @@ class FeedTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as! FeedTableViewCell
-        
         cell.shot = shots[indexPath.row]
-        
         return cell
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D27B7541F2A371000698F4A /* DribbbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27B7531F2A371000698F4A /* DribbbleTests.swift */; };
+		8D27B75C1F2A372400698F4A /* Pods_Dribbble_DribbbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D27B75B1F2A372400698F4A /* Pods_Dribbble_DribbbleTests.framework */; };
 		8D2C11FE1F28E28F00DB8D4D /* PrimitivesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C11FD1F28E28F00DB8D4D /* PrimitivesArray.swift */; };
 		8D2C12061F28F46C00DB8D4D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C12041F28F46C00DB8D4D /* FeedTableViewCell.swift */; };
 		8D2C12071F28F46C00DB8D4D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2C12051F28F46C00DB8D4D /* FeedTableViewCell.xib */; };
@@ -27,11 +29,26 @@
 		8DC5212B1F2898C000DD779C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5212A1F2898C000DD779C /* AppDelegate.swift */; };
 		8DC521321F2898C000DD779C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC521311F2898C000DD779C /* Assets.xcassets */; };
 		8DC521351F2898C000DD779C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC521331F2898C000DD779C /* LaunchScreen.storyboard */; };
+		8DDA1CEE1F2A7C920048D6A3 /* DribbbleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA1CED1F2A7C920048D6A3 /* DribbbleObject.swift */; };
 		B85C8271CD964CC8F1C757A8 /* Pods_Dribbble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4851AE1178BCA6DAA329D3 /* Pods_Dribbble.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8D27B7561F2A371000698F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DC5211F1F2898C000DD779C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC521261F2898C000DD779C;
+			remoteInfo = Dribbble;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5C42C6D18D7839B611D8BB56 /* Pods-Dribbble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dribbble.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dribbble/Pods-Dribbble.release.xcconfig"; sourceTree = "<group>"; };
+		8D27B7511F2A371000698F4A /* DribbbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DribbbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D27B7531F2A371000698F4A /* DribbbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DribbbleTests.swift; sourceTree = "<group>"; };
+		8D27B7551F2A371000698F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D27B75B1F2A372400698F4A /* Pods_Dribbble_DribbbleTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Dribbble_DribbbleTests.framework; path = "../../../Library/Developer/Xcode/DerivedData/Dribbble-ddyjwihlxfpczyazkvkzugsuojvp/Build/Products/Debug-iphonesimulator/Pods_Dribbble_DribbbleTests.framework"; sourceTree = "<group>"; };
 		8D2C11FD1F28E28F00DB8D4D /* PrimitivesArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimitivesArray.swift; sourceTree = "<group>"; };
 		8D2C12041F28F46C00DB8D4D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableViewCell.swift; path = FeedFlow/FeedCell/FeedTableViewCell.swift; sourceTree = "<group>"; };
 		8D2C12051F28F46C00DB8D4D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedTableViewCell.xib; path = FeedFlow/FeedCell/FeedTableViewCell.xib; sourceTree = "<group>"; };
@@ -54,11 +71,20 @@
 		8DC521311F2898C000DD779C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC521341F2898C000DD779C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DC521361F2898C000DD779C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DDA1CED1F2A7C920048D6A3 /* DribbbleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DribbbleObject.swift; path = ServerModels/DribbbleObject.swift; sourceTree = "<group>"; };
 		9C4851AE1178BCA6DAA329D3 /* Pods_Dribbble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dribbble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C5ED0FE8957D0C98ADCEBE /* Pods-Dribbble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dribbble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dribbble/Pods-Dribbble.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8D27B74E1F2A371000698F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D27B75C1F2A372400698F4A /* Pods_Dribbble_DribbbleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC521241F2898C000DD779C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +99,7 @@
 		3ECEA8BE4644950512938B63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D27B75B1F2A372400698F4A /* Pods_Dribbble_DribbbleTests.framework */,
 				9C4851AE1178BCA6DAA329D3 /* Pods_Dribbble.framework */,
 			);
 			name = Frameworks;
@@ -85,6 +112,15 @@
 				5C42C6D18D7839B611D8BB56 /* Pods-Dribbble.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D27B7521F2A371000698F4A /* DribbbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D27B7531F2A371000698F4A /* DribbbleTests.swift */,
+				8D27B7551F2A371000698F4A /* Info.plist */,
+			);
+			path = DribbbleTests;
 			sourceTree = "<group>";
 		};
 		8D2C11FF1F28F3F800DB8D4D /* FeedCell */ = {
@@ -104,7 +140,6 @@
 				8D6CB58C1F289AA700795A57 /* Storyboard.swift */,
 				8D6CB5971F28AB8700795A57 /* Alert.swift */,
 				8D6CB5AA1F28D0C900795A57 /* APIManager.swift */,
-				8D2C11FD1F28E28F00DB8D4D /* PrimitivesArray.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -140,11 +175,13 @@
 		8D6CB5991F28B3FF00795A57 /* ServerModels */ = {
 			isa = PBXGroup;
 			children = (
+				8D2C11FD1F28E28F00DB8D4D /* PrimitivesArray.swift */,
 				8D6CB5A21F28BC7800795A57 /* Images.swift */,
 				8D6CB5A31F28BC7800795A57 /* Team.swift */,
 				8D6CB5A41F28BC7800795A57 /* User.swift */,
 				8D6CB59A1F28B42400795A57 /* Shot.swift */,
 				8D6CB5A81F28C9B900795A57 /* UserAndTeamBaseModel.swift */,
+				8DDA1CED1F2A7C920048D6A3 /* DribbbleObject.swift */,
 			);
 			name = ServerModels;
 			sourceTree = "<group>";
@@ -153,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC521291F2898C000DD779C /* Dribbble */,
+				8D27B7521F2A371000698F4A /* DribbbleTests */,
 				8DC521281F2898C000DD779C /* Products */,
 				8C7C23ED80C323DFF46632C4 /* Pods */,
 				3ECEA8BE4644950512938B63 /* Frameworks */,
@@ -163,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC521271F2898C000DD779C /* Dribbble.app */,
+				8D27B7511F2A371000698F4A /* DribbbleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +224,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8D27B7501F2A371000698F4A /* DribbbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D27B75A1F2A371000698F4A /* Build configuration list for PBXNativeTarget "DribbbleTests" */;
+			buildPhases = (
+				8D27B74D1F2A371000698F4A /* Sources */,
+				8D27B74E1F2A371000698F4A /* Frameworks */,
+				8D27B74F1F2A371000698F4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D27B7571F2A371000698F4A /* PBXTargetDependency */,
+			);
+			name = DribbbleTests;
+			productName = DribbbleTests;
+			productReference = 8D27B7511F2A371000698F4A /* DribbbleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8DC521261F2898C000DD779C /* Dribbble */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DC521391F2898C000DD779C /* Build configuration list for PBXNativeTarget "Dribbble" */;
@@ -215,6 +272,12 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Sorochinskiy Dmitriy";
 				TargetAttributes = {
+					8D27B7501F2A371000698F4A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K8RQ78W9JR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8DC521261F2898C000DD779C;
+					};
 					8DC521261F2898C000DD779C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = K8RQ78W9JR;
@@ -236,11 +299,19 @@
 			projectRoot = "";
 			targets = (
 				8DC521261F2898C000DD779C /* Dribbble */,
+				8D27B7501F2A371000698F4A /* DribbbleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8D27B74F1F2A371000698F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC521251F2898C000DD779C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,6 +375,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8D27B74D1F2A371000698F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D27B7541F2A371000698F4A /* DribbbleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC521231F2898C000DD779C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +399,7 @@
 				8D6CB5831F289A4400795A57 /* AuthManager.swift in Sources */,
 				8DC5212B1F2898C000DD779C /* AppDelegate.swift in Sources */,
 				8D6CB5A61F28BC7800795A57 /* Team.swift in Sources */,
+				8DDA1CEE1F2A7C920048D6A3 /* DribbbleObject.swift in Sources */,
 				8D6CB5AB1F28D0C900795A57 /* APIManager.swift in Sources */,
 				8D6CB5981F28AB8700795A57 /* Alert.swift in Sources */,
 				8D6CB5A71F28BC7800795A57 /* User.swift in Sources */,
@@ -327,6 +407,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D27B7571F2A371000698F4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC521261F2898C000DD779C /* Dribbble */;
+			targetProxy = 8D27B7561F2A371000698F4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8DC521331F2898C000DD779C /* LaunchScreen.storyboard */ = {
@@ -340,6 +428,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8D27B7581F2A371000698F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C5ED0FE8957D0C98ADCEBE /* Pods-Dribbble.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K8RQ78W9JR;
+				INFOPLIST_FILE = DribbbleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nelex.DribbbleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dribbble.app/Dribbble";
+			};
+			name = Debug;
+		};
+		8D27B7591F2A371000698F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C5ED0FE8957D0C98ADCEBE /* Pods-Dribbble.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K8RQ78W9JR;
+				INFOPLIST_FILE = DribbbleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nelex.DribbbleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dribbble.app/Dribbble";
+			};
+			name = Release;
+		};
 		8DC521371F2898C000DD779C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -381,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,6 +535,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -425,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -454,6 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K8RQ78W9JR;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = Dribbble/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -466,6 +586,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8D27B75A1F2A371000698F4A /* Build configuration list for PBXNativeTarget "DribbbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D27B7581F2A371000698F4A /* Debug */,
+				8D27B7591F2A371000698F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8DC521221F2898C000DD779C /* Build configuration list for PBXProject "Dribbble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

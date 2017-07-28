@@ -11,12 +11,14 @@ import DribbbleSwift
 import RealmSwift
 
 struct APIManager {
+    let realm = try! Realm()
+    
     public func getShots(success: @escaping () -> Void) {
         getShots(count: 50, page: 0, success: success)
     }
     
     func getShots(count: Int, page: Int, success: @escaping () -> Void) {
-        
+        if count == 0 { return }
         DispatchQueue.global(qos: .utility).async {
             ShotsDS.getShots(perPage: count, page: page, sort: .recent) { apiData, shots in
                 if let error = apiData.error {
@@ -24,27 +26,24 @@ struct APIManager {
                     return
                 }
                 
-                let realm = try! Realm()
-                let realmQueue = DispatchQueue(label: "realmQueue", qos: .utility)
-                for shot in shots! {
-                    if realm.object(ofType: Shot.self, forPrimaryKey: shot.id as AnyObject) != nil || shot.animated == true {
-                        continue
-                    }
-                    
-                    if shot.animated {
-                        self.getShots(count: 1,
-                                      page: page == 0 ? 51 : page + 1, success: success)
-                    }
-                    
-                    realmQueue.sync{
-                        guard let shotObject = Shot(shot) else { return }
-                        try! realm.write {
-                            realm.add(shotObject)
-                        }
-                        
-                    }
-                }
+                guard let shotsDS = shots?.filter ({ shot in
+                    !shot.animated || shot.id != nil || shot.user.id != nil
+                }) else { return }
+                
+                self.writeShots(shotsDS)
                 success()
+            }
+        }
+    }
+    
+    func writeShots(_ shotsDS: [ShotsDS]) {
+        DispatchQueue(label: "realmQueue", qos: .utility).sync{
+            try! realm.write {
+                shotsDS.forEach() { shotDS in
+                    if let _ = realm.object(ofType: Shot.self, forPrimaryKey: shotDS.id as AnyObject) { return }
+                    guard let shot = Shot(shotDS) else { return }
+                    realm.add(shot, update: true)
+                }
             }
         }
     }

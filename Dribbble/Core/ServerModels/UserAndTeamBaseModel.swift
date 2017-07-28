@@ -10,8 +10,7 @@ import Foundation
 import RealmSwift
 import DribbbleSwift
 
-class UserAndTeamBaseModel: Object {
-    var id: Int?
+class UserAndTeamRealmModel: DribbbleObject {
     dynamic var name: String!
     dynamic var username: String!
     dynamic var html_url: String!
