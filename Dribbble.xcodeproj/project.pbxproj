@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D27B7541F2A371000698F4A /* DribbbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D27B7531F2A371000698F4A /* DribbbleTests.swift */; };
 		8D27B75C1F2A372400698F4A /* Pods_Dribbble_DribbbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D27B75B1F2A372400698F4A /* Pods_Dribbble_DribbbleTests.framework */; };
-		8D2C11FE1F28E28F00DB8D4D /* PrimitivesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C11FD1F28E28F00DB8D4D /* PrimitivesArray.swift */; };
 		8D2C12061F28F46C00DB8D4D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C12041F28F46C00DB8D4D /* FeedTableViewCell.swift */; };
 		8D2C12071F28F46C00DB8D4D /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2C12051F28F46C00DB8D4D /* FeedTableViewCell.xib */; };
 		8D6CB5831F289A4400795A57 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB5821F289A4400795A57 /* AuthManager.swift */; };
@@ -20,16 +19,17 @@
 		8D6CB5941F28A08C00795A57 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6CB5931F28A08C00795A57 /* Feed.storyboard */; };
 		8D6CB5961F28A0AC00795A57 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB5951F28A0AC00795A57 /* FeedTableViewController.swift */; };
 		8D6CB5981F28AB8700795A57 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB5971F28AB8700795A57 /* Alert.swift */; };
-		8D6CB59B1F28B42400795A57 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB59A1F28B42400795A57 /* Shot.swift */; };
-		8D6CB5A51F28BC7800795A57 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB5A21F28BC7800795A57 /* Images.swift */; };
-		8D6CB5A61F28BC7800795A57 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB5A31F28BC7800795A57 /* Team.swift */; };
-		8D6CB5A71F28BC7800795A57 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB5A41F28BC7800795A57 /* User.swift */; };
-		8D6CB5A91F28C9B900795A57 /* UserAndTeamBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB5A81F28C9B900795A57 /* UserAndTeamBaseModel.swift */; };
 		8D6CB5AB1F28D0C900795A57 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB5AA1F28D0C900795A57 /* APIManager.swift */; };
 		8DC5212B1F2898C000DD779C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5212A1F2898C000DD779C /* AppDelegate.swift */; };
 		8DC521321F2898C000DD779C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC521311F2898C000DD779C /* Assets.xcassets */; };
 		8DC521351F2898C000DD779C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC521331F2898C000DD779C /* LaunchScreen.storyboard */; };
-		8DDA1CEE1F2A7C920048D6A3 /* DribbbleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA1CED1F2A7C920048D6A3 /* DribbbleObject.swift */; };
+		8DDA1CF61F2B2F200048D6A3 /* DribbbleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA1CEF1F2B2F200048D6A3 /* DribbbleObject.swift */; };
+		8DDA1CF71F2B2F200048D6A3 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA1CF01F2B2F200048D6A3 /* Images.swift */; };
+		8DDA1CF81F2B2F200048D6A3 /* PrimitivesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA1CF11F2B2F200048D6A3 /* PrimitivesArray.swift */; };
+		8DDA1CF91F2B2F200048D6A3 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA1CF21F2B2F200048D6A3 /* Shot.swift */; };
+		8DDA1CFA1F2B2F200048D6A3 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA1CF31F2B2F200048D6A3 /* Team.swift */; };
+		8DDA1CFB1F2B2F200048D6A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA1CF41F2B2F200048D6A3 /* User.swift */; };
+		8DDA1CFC1F2B2F200048D6A3 /* UserAndTeamBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA1CF51F2B2F200048D6A3 /* UserAndTeamBaseModel.swift */; };
 		B85C8271CD964CC8F1C757A8 /* Pods_Dribbble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4851AE1178BCA6DAA329D3 /* Pods_Dribbble.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,6 @@
 		8D27B7531F2A371000698F4A /* DribbbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DribbbleTests.swift; sourceTree = "<group>"; };
 		8D27B7551F2A371000698F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D27B75B1F2A372400698F4A /* Pods_Dribbble_DribbbleTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Dribbble_DribbbleTests.framework; path = "../../../Library/Developer/Xcode/DerivedData/Dribbble-ddyjwihlxfpczyazkvkzugsuojvp/Build/Products/Debug-iphonesimulator/Pods_Dribbble_DribbbleTests.framework"; sourceTree = "<group>"; };
-		8D2C11FD1F28E28F00DB8D4D /* PrimitivesArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimitivesArray.swift; sourceTree = "<group>"; };
 		8D2C12041F28F46C00DB8D4D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableViewCell.swift; path = FeedFlow/FeedCell/FeedTableViewCell.swift; sourceTree = "<group>"; };
 		8D2C12051F28F46C00DB8D4D /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedTableViewCell.xib; path = FeedFlow/FeedCell/FeedTableViewCell.xib; sourceTree = "<group>"; };
 		8D6CB5821F289A4400795A57 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -60,18 +59,19 @@
 		8D6CB5931F28A08C00795A57 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Feed.storyboard; path = FeedFlow/Feed.storyboard; sourceTree = "<group>"; };
 		8D6CB5951F28A0AC00795A57 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableViewController.swift; path = FeedFlow/FeedTableViewController.swift; sourceTree = "<group>"; };
 		8D6CB5971F28AB8700795A57 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		8D6CB59A1F28B42400795A57 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shot.swift; path = ServerModels/Shot.swift; sourceTree = "<group>"; };
-		8D6CB5A21F28BC7800795A57 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Images.swift; path = ServerModels/Images.swift; sourceTree = "<group>"; };
-		8D6CB5A31F28BC7800795A57 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = ServerModels/Team.swift; sourceTree = "<group>"; };
-		8D6CB5A41F28BC7800795A57 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ServerModels/User.swift; sourceTree = "<group>"; };
-		8D6CB5A81F28C9B900795A57 /* UserAndTeamBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAndTeamBaseModel.swift; path = ServerModels/UserAndTeamBaseModel.swift; sourceTree = "<group>"; };
 		8D6CB5AA1F28D0C900795A57 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		8DC521271F2898C000DD779C /* Dribbble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dribbble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC5212A1F2898C000DD779C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC521311F2898C000DD779C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC521341F2898C000DD779C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DC521361F2898C000DD779C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DDA1CED1F2A7C920048D6A3 /* DribbbleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DribbbleObject.swift; path = ServerModels/DribbbleObject.swift; sourceTree = "<group>"; };
+		8DDA1CEF1F2B2F200048D6A3 /* DribbbleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DribbbleObject.swift; path = Models/DribbbleObject.swift; sourceTree = "<group>"; };
+		8DDA1CF01F2B2F200048D6A3 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Images.swift; path = Models/Images.swift; sourceTree = "<group>"; };
+		8DDA1CF11F2B2F200048D6A3 /* PrimitivesArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrimitivesArray.swift; path = Models/PrimitivesArray.swift; sourceTree = "<group>"; };
+		8DDA1CF21F2B2F200048D6A3 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shot.swift; path = Models/Shot.swift; sourceTree = "<group>"; };
+		8DDA1CF31F2B2F200048D6A3 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = Models/Team.swift; sourceTree = "<group>"; };
+		8DDA1CF41F2B2F200048D6A3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		8DDA1CF51F2B2F200048D6A3 /* UserAndTeamBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAndTeamBaseModel.swift; path = Models/UserAndTeamBaseModel.swift; sourceTree = "<group>"; };
 		9C4851AE1178BCA6DAA329D3 /* Pods_Dribbble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dribbble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C5ED0FE8957D0C98ADCEBE /* Pods-Dribbble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dribbble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dribbble/Pods-Dribbble.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,7 +135,7 @@
 		8D6CB5811F289A4400795A57 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				8D6CB5991F28B3FF00795A57 /* ServerModels */,
+				8D6CB5991F28B3FF00795A57 /* Models */,
 				8D6CB5821F289A4400795A57 /* AuthManager.swift */,
 				8D6CB58C1F289AA700795A57 /* Storyboard.swift */,
 				8D6CB5971F28AB8700795A57 /* Alert.swift */,
@@ -172,18 +172,18 @@
 			name = FeedFlow;
 			sourceTree = "<group>";
 		};
-		8D6CB5991F28B3FF00795A57 /* ServerModels */ = {
+		8D6CB5991F28B3FF00795A57 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8D2C11FD1F28E28F00DB8D4D /* PrimitivesArray.swift */,
-				8D6CB5A21F28BC7800795A57 /* Images.swift */,
-				8D6CB5A31F28BC7800795A57 /* Team.swift */,
-				8D6CB5A41F28BC7800795A57 /* User.swift */,
-				8D6CB59A1F28B42400795A57 /* Shot.swift */,
-				8D6CB5A81F28C9B900795A57 /* UserAndTeamBaseModel.swift */,
-				8DDA1CED1F2A7C920048D6A3 /* DribbbleObject.swift */,
+				8DDA1CEF1F2B2F200048D6A3 /* DribbbleObject.swift */,
+				8DDA1CF01F2B2F200048D6A3 /* Images.swift */,
+				8DDA1CF11F2B2F200048D6A3 /* PrimitivesArray.swift */,
+				8DDA1CF21F2B2F200048D6A3 /* Shot.swift */,
+				8DDA1CF31F2B2F200048D6A3 /* Team.swift */,
+				8DDA1CF41F2B2F200048D6A3 /* User.swift */,
+				8DDA1CF51F2B2F200048D6A3 /* UserAndTeamBaseModel.swift */,
 			);
-			name = ServerModels;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		8DC5211E1F2898C000DD779C = {
@@ -389,20 +389,20 @@
 			files = (
 				8D6CB5911F289AF900795A57 /* LoginViewController.swift in Sources */,
 				8D6CB58B1F289A5700795A57 /* Constants.swift in Sources */,
+				8DDA1CFA1F2B2F200048D6A3 /* Team.swift in Sources */,
 				8D6CB58D1F289AA700795A57 /* Storyboard.swift in Sources */,
-				8D2C11FE1F28E28F00DB8D4D /* PrimitivesArray.swift in Sources */,
+				8DDA1CF71F2B2F200048D6A3 /* Images.swift in Sources */,
 				8D2C12061F28F46C00DB8D4D /* FeedTableViewCell.swift in Sources */,
-				8D6CB59B1F28B42400795A57 /* Shot.swift in Sources */,
-				8D6CB5A51F28BC7800795A57 /* Images.swift in Sources */,
 				8D6CB5961F28A0AC00795A57 /* FeedTableViewController.swift in Sources */,
-				8D6CB5A91F28C9B900795A57 /* UserAndTeamBaseModel.swift in Sources */,
 				8D6CB5831F289A4400795A57 /* AuthManager.swift in Sources */,
+				8DDA1CFB1F2B2F200048D6A3 /* User.swift in Sources */,
+				8DDA1CF81F2B2F200048D6A3 /* PrimitivesArray.swift in Sources */,
+				8DDA1CFC1F2B2F200048D6A3 /* UserAndTeamBaseModel.swift in Sources */,
+				8DDA1CF61F2B2F200048D6A3 /* DribbbleObject.swift in Sources */,
 				8DC5212B1F2898C000DD779C /* AppDelegate.swift in Sources */,
-				8D6CB5A61F28BC7800795A57 /* Team.swift in Sources */,
-				8DDA1CEE1F2A7C920048D6A3 /* DribbbleObject.swift in Sources */,
 				8D6CB5AB1F28D0C900795A57 /* APIManager.swift in Sources */,
+				8DDA1CF91F2B2F200048D6A3 /* Shot.swift in Sources */,
 				8D6CB5981F28AB8700795A57 /* Alert.swift in Sources */,
-				8D6CB5A71F28BC7800795A57 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
