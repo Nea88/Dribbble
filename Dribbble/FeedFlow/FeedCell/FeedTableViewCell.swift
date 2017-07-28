@@ -21,6 +21,7 @@ class FeedTableViewCell: UITableViewCell {
             shotTitleLabel.text = shot.title
             shotDescriptionLabel.text = shot.shotDescription
             let imageUrl = URL(string: shot.images.hidpi ?? shot.images.normal)
+            shotImageView.kf.indicatorType = .activity
             shotImageView.kf.setImage(with: imageUrl)
         }
     }
